@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FOTOKUU PROJECT"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creating Your Memories"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppinsbold"/>
+
+    <!-- Deskripsi -->
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="Abadikan setiap momen berharga Anda dengan sentuhan profesional dan penuh cerita."
+        android:textSize="13sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_below="@id/tagline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppinssemibold"/>
+
+    <!-- Container Button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp">
+
+        <!-- LOGIN -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="260dp"
+            android:layout_height="55dp"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/poppinssemibold"/>
+
+        <!-- REGISTER -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="REGISTER"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000"
+            android:background="@drawable/btn_regist"
+            android:backgroundTint="@null"/>
+    </LinearLayout>
+
+</RelativeLayout>
